@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <metacharset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Criyhk's Lab </title>
+      
+        <link rel="stylesheet" type="text/css" href="https://criyhk.github.io/css/theme.css">
+    </head>
+    <body>
+        <div class="tb"> 
+            <nav style="text-align: center;">
+                <a href="https://criyhk.github.io/">主页</a> |
+                <a href="">更多（这是个测试）</a>
 
-<head>
-  <metacharset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Criyhk's Lab </title>
+            </nav>
+        </div>
 
-<style>
-body {
-  background-image: url("https://s1.328888.xyz/2022/05/22/d0tS3.gif");
-}
-</style>
+        <p> 现在时间： </p>
+        <p id="time" style="font-size: 1.5rem; text-align: center;"></p>
+        <script>
+            function mytime(){
+                var a = new Date();
+                var b = a.toLocaleTimeString();
+                var c = a.toLocaleDateString();
+                document.getElementById("time").innerHTML = c+"&nbsp"+b;
+                }
+            setInterval(function() {mytime()},1000);
+        </script>
 
-</head>
-  
-<body style="color: #000;">
-<p style="text-align: center;"> 这里是哪？ </p>
-<p style="text-align: center;"> 这里什么也没有，真的 </p>
-</body>
+        <p>
+            Nothing more.
+        </p>
 
+    </body>
 </html>
+
+
